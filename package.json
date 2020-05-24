@@ -1,7 +1,7 @@
 {
   "name": "datatables-vietnamese-search-example",
   "version": "1.0.0",
-  "description": "datatables-vietnamese-search-example",
+  "description": "A small example for Vietnamese search in DataTables",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
