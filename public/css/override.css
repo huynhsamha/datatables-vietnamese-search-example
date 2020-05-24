@@ -1,0 +1,11 @@
+.skin-blue .main-header li.user-header {
+    background-color: #3a6888;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu {
+    padding-top: 0px;
+}
+
+.d-inline {
+    display: inline;
+}

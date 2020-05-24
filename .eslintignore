@@ -1,0 +1,8 @@
+node_modules/*
+coverage/*
+dist/*
+dll/*
+build/*
+public/*
+vendors/*
+libs/*

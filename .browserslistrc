@@ -1,0 +1,12 @@
+# Query for supported browsers:
+# https://browserl.ist/?q=last+2+versions%2C+%3E+0.1%25%2C+ie+%3E%3D+6%2C+Firefox+ESR
+
+
+
+last 2 versions
+
+> 0.1%
+
+ie >= 6
+
+Firefox ESR
