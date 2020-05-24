@@ -128,3 +128,10 @@ Tables.tbData.rows.add(rows).draw();
 ├── webpack.prod.js   #
 └── yarn.lock         #
 ```
+
+### Development
+
++ Clone source
++ Install dependencies: `yarn`
++ Start localhost: `yarn start` -- port `4200`
++ Build and deploy github page: `yarn deploy`
