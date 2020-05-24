@@ -22,6 +22,10 @@ Từ dữ liệu ta thực hiện hiển thị dữ liệu qua DataTables. Tại
 
 Ví dụ: Dữ liệu ta hiển thị là `Hồ Chí Minh`, và ta search từ khoá `ho chi`, khi đó các rows liên quan vẫn được filter như hình bên dưới.
 
+<img src="https://github.com/huynhsamha/datatables-vietnamese-search-example/blob/master/screenshots/ho-chi.png">
+
+<img src="https://github.com/huynhsamha/datatables-vietnamese-search-example/blob/master/screenshots/ha-noi.png">
+
 ### Hiện thực
 
 Việc tìm kiếm này cũng không quá khó. Mặc định DataTables sử dụng các dữ liệu của các cell/rows để lọc khi người dùng nhập input vào khung search. Tuy nhiên tiếng việt có dấu sẽ không thể lọc được. Ví dụ từ `Hồ` thì DataTables yêu cầu từ tìm kiếm phải có từ `ồ`, nếu ta nhập `o` thì sẽ không lọc được.
