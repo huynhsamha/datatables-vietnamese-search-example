@@ -1,8 +1,8 @@
 # datatables-vietnamese-search-example
 
-A small example for Vietnamese search in DataTables
+🇻🇳 A small example for Vietnamese search in DataTables 🇻🇳
 
-🇻🇳Language: Vietnamese 🇻🇳
+🇻🇳 Language: Vietnamese 🇻🇳
 
 ### Giới thiệu
 
@@ -23,6 +23,8 @@ Từ dữ liệu ta thực hiện hiển thị dữ liệu qua DataTables. Tại
 Ví dụ: Dữ liệu ta hiển thị là `Hồ Chí Minh`, và ta search từ khoá `ho chi`, khi đó các rows liên quan vẫn được filter như hình bên dưới.
 
 <img src="https://github.com/huynhsamha/datatables-vietnamese-search-example/blob/master/screenshots/ho-chi.png">
+
+Còn đây là ví dụ với tìm kiếm `ha noi`:
 
 <img src="https://github.com/huynhsamha/datatables-vietnamese-search-example/blob/master/screenshots/ha-noi.png">
 
@@ -137,5 +139,5 @@ Tables.tbData.rows.add(rows).draw();
 
 + Clone source
 + Install dependencies: `yarn`
-+ Start localhost: `yarn start` -- port `4200`
-+ Build and deploy github page: `yarn deploy`
++ Start localhost: `yarn start`, port `4200` (defined in `package.json`)
++ Build and deploy github page: `yarn deploy` (defined in `package.json`)

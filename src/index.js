@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const jsrmvi = require('jsrmvi');
+import jsrmvi from 'jsrmvi';
 
 $(() => {
 
