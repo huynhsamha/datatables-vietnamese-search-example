@@ -6,7 +6,7 @@
 
 ### Giới thiệu
 
-Đây là một demo đơn giản cho vấn đề **tìm kiếm các dữ liệu tiếng việt** trong plugins [DataTables](https://datatables.net/).
+Đây là một demo đơn giản cho vấn đề **tìm kiếm các dữ liệu Tiếng Việt** trong plugins [DataTables](https://datatables.net/).
 
 Các bạn có thể xem demo [tại đây](https://huynhsamha.github.io/datatables-vietnamese-search-example/).
 
@@ -18,7 +18,7 @@ Dữ liệu mình demo sử dụng là kinh độ và vĩ độ của các tỉn
 
 ### Mục tiêu
 
-Từ dữ liệu ta thực hiện hiển thị dữ liệu qua DataTables. Tại khung tìm kiếm của table, có có thể input vào các từ **tiếng việt không dấu** nhưng DataTables vẫn có thể filter được các dữ liệu từ các từ khoá này.
+Từ dữ liệu ta thực hiện hiển thị dữ liệu qua DataTables. Tại khung tìm kiếm của table, có có thể input vào các từ **Tiếng Việt không dấu** nhưng DataTables vẫn có thể filter được các dữ liệu từ các từ khoá này.
 
 Ví dụ: Dữ liệu ta hiển thị là `Hồ Chí Minh`, và ta search từ khoá `ho chi`, khi đó các rows liên quan vẫn được filter như hình bên dưới.
 
@@ -30,13 +30,13 @@ Còn đây là ví dụ với tìm kiếm `ha noi`:
 
 ### Hiện thực
 
-Việc tìm kiếm này cũng không quá khó. Mặc định DataTables sử dụng các dữ liệu của các cell/rows để lọc khi người dùng nhập input vào khung search. Tuy nhiên tiếng việt có dấu sẽ không thể lọc được. Ví dụ từ `Hồ` thì DataTables yêu cầu từ tìm kiếm phải có từ `ồ`, nếu ta nhập `o` thì sẽ không lọc được.
+Việc tìm kiếm này cũng không quá khó. Mặc định DataTables sử dụng các dữ liệu của các cell/rows để lọc khi người dùng nhập input vào khung search. Tuy nhiên Tiếng Việt có dấu sẽ không thể lọc được. Ví dụ từ `Hồ` thì DataTables yêu cầu từ tìm kiếm phải có từ `ồ`, nếu ta nhập `o` thì sẽ không lọc được.
 
 Vì thế mình sử dụng một *trick* nhỏ là tạo một cột dữ liệu `payload` cho từng row (cách này mình tự nghĩ ra thôi, có thể sẽ có những các **chính quy** khác hay hơn). Và đương nhiên cột này mình nên ẩn đi khỏi người dùng.
 
-Trong cột `payload` này thì ta muốn thêm bất kì thông tin nào cho record của row đó cũng được, vì cơ bản nó đã được ẩn. Trong trường hợp này, ta có thể đặt payload là tên các tỉnh thành đã được xoá dấu (remove accents) của tiếng việt. Ví dụ row `Hồ Chí Minh` thì `payload` có thể là `ho-chi-minh`.
+Trong cột `payload` này thì ta muốn thêm bất kì thông tin nào cho record của row đó cũng được, vì cơ bản nó đã được ẩn. Trong trường hợp này, ta có thể đặt payload là tên các tỉnh thành đã được xoá dấu (remove accents) của Tiếng Việt. Ví dụ row `Hồ Chí Minh` thì `payload` có thể là `ho-chi-minh`.
 
-Việc xoá dấu cho các từ tiếng việt cũng không quá khó. Mình sử dụng thư viện [jsrmvi](https://www.npmjs.com/package/jsrmvi) để thực hiện xoá dấu các từ tiếng việt.
+Việc xoá dấu cho các từ Tiếng Việt cũng không quá khó. Mình sử dụng thư viện [jsrmvi](https://www.npmjs.com/package/jsrmvi) để thực hiện xoá dấu các từ Tiếng Việt.
 
 #### Chi tiết mã nguồn
 
